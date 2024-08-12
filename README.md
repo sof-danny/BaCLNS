@@ -1,6 +1,6 @@
 # BaCLNS: Efficient Backstepping Control for Linear and Nonlinear Dynamic Systems
 
-BaCLNS (Backstepping Control for Linear and Nonlinear Systems) is a Python package designed to provide efficient and robust control solutions for dynamic systems using backstepping techniques. This package offers a flexible and user-friendly interface for designing, simulating, and analyzing control systems, with options for plotting and saving results.
+BaCLNS (Backstepping Control for Linear and Nonlinear Systems) is a Python package designed to provide efficient and robust control solutions for dynamic systems (Control Affine Systems) using backstepping techniques. This package offers a flexible and user-friendly interface for designing, simulating, and analyzing control systems, with options for plotting and saving results.
 
 Introduction to Backstepping Control
 
