@@ -47,4 +47,5 @@ plot_responses(time, state_values, control_inputs, errors)
 
 # 6. Save the results to a JSON file
 
-save_responses(time, state_values, control_inputs, 'test_results.json', errors)
+#save_responses(time, state_values, control_inputs, 'test_results.json', errors)
+plot_responses(time, state_values, control_inputs, errors, save_folder='plots')

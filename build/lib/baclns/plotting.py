@@ -1,10 +1,9 @@
 import matplotlib.pyplot as plt
-import os
 
-def plot_responses(time, state_values, control_inputs, errors, save_folder=None):
-    # Plot state variables
-    plt.figure(figsize=(8, 6))
+def plot_responses(time, state_values, control_inputs, errors):
+    plt.figure(figsize=(12, 8))
     
+    # Plot state variables
     for i, state in enumerate(state_values):
         plt.plot(time, state, label=f'State x{i+1}')
     
@@ -14,13 +13,7 @@ def plot_responses(time, state_values, control_inputs, errors, save_folder=None)
     plt.grid(True)
     plt.legend()
     
-    # Save the plot if save_folder is specified
-    if save_folder:
-        if not os.path.exists(save_folder):
-            os.makedirs(save_folder)
-        plt.savefig(os.path.join(save_folder, 'system_response.png'))
-
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(12, 8))
     
     # Plot control inputs
     plt.plot(time[:-1], control_inputs, label='Control Input u')
@@ -31,11 +24,7 @@ def plot_responses(time, state_values, control_inputs, errors, save_folder=None)
     plt.grid(True)
     plt.legend()
     
-    # Save the plot if save_folder is specified
-    if save_folder:
-        plt.savefig(os.path.join(save_folder, 'control_input.png'))
-    
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(12, 8))
     
     # Plot errors
     for i, error_list in enumerate(zip(*errors)):
@@ -47,9 +36,4 @@ def plot_responses(time, state_values, control_inputs, errors, save_folder=None)
     plt.grid(True)
     plt.legend()
     
-    # Save the plot if save_folder is specified
-    if save_folder:
-        plt.savefig(os.path.join(save_folder, 'state_errors.png'))
-    
-    # Show all plots
     plt.show()
