@@ -39,7 +39,7 @@ First, define your system's state equations and parameters. For example, if you 
 
 ```bash
 # Define system parameters
-num_states = 2
+num_states = 3
 
 x1, x2, x3 = sp.symbols('x1 x2 x3')
 u = sp.Symbol('u')
