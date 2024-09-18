@@ -172,5 +172,5 @@ If you have questions or issues using the package or understanding Backstepping 
 ## Citation
 If you find this useful for your class or research, please cite:
 
-[BaCLNS: Efficient Control for Dynamic Systems](https://github.com/sof-danny/BaCLNS)
+[BaCLNS: A toolbox for fast and efficient control of Linear and Nonlinear Control Affine Systems](https://www.arxiv.org/pdf/2409.09609)
 
